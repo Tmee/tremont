@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tremont Reality Capital</title>
+  <%= favicon_link_tag 'favicon.ico' %>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body ng-app="tremont"><br/>
+
+  <div class="col-md-12">
+    <div class='panel'>
+        <h1>Tremont Reality Capital</h1>
+
+      <div class="bs-example">
+          <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Home</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                <ul class="nav navbar-nav">
+                  <li class="active">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">About us<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Overview</a></li>
+                      <li><a href="#">Community Relations</a></li>
+                      <li><a href="#">History</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Employee Biographies</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Investments<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Overview</a></li>
+                      <li><a href="#">Selected Investment</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Advisory Services<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Real Estate Investment Banking</a></li>
+                      <li><a href="#">CRE Portfolio Consulting</a></li>
+                      <li><a href="#">Representative Transactions</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Newsroom<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Market Commentary</a></li>
+                      <li><a href="#">Articles</a></li>
+                      <li><a href="#">Events</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Newsletter Sign-up</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                  <a href="" ef="#" data-toggle="dropdown" class="dropdown-toggle">Contact us<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Offices</a></li>
+                      <li><a href="#">General Inquiries</a></li>
+                      <li><a href="#">Careers</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+        </div>
+    </div>
+    <div class='panel'>
+      <div ng-controller="TremontController">
+        <img ng-src="{{image}}">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

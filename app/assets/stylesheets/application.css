@@ -1,0 +1,46 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ #banner_background {
+  img {
+    width: 45%;
+    background-color: transparent;
+    margin-bottom: -11%;
+  }
+  h1 {
+    font-family: "Sansita One";
+    font-size: 40px;
+  }
+}
+
+.header {
+  width: 100%;
+  hr {
+    border-color: #584B45;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-width: 10px 0px 0px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+body {
+  margin: 0;
+  background-size: 1440px 800px;
+  background: url('background.png');
+}

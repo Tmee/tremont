@@ -1,0 +1,10 @@
+(function(){
+  var app = angular.module('tremont', []);
+
+  app.controller("TremontController", ['$scope', function ($scope) {
+    'use strict'
+    var background = "<%= asset_path 'boston.png' %>";
+
+    $scope.image = background;
+  }]);
+})();
