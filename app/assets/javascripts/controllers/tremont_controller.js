@@ -1,6 +1,6 @@
   app.controller("TremontController", ['$scope', function ($scope) {
     'use strict'
-    var background = "" ;
+    var building_1 = "<%= asset_path 'Building1-format'%>" ;
 
-    $scope.image = background;
+    $scope.image = building_1;
   }]);

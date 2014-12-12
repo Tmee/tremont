@@ -13,7 +13,6 @@
   <div class="col-md-12">
     <div class='panel'>
         <h1>Tremont Reality Capital</h1>
-
       <div class="bs-example">
           <nav class="navbar navbar-inverse" role="navigation">
             <div class="container-fluid">
@@ -80,13 +79,17 @@
           </nav>
         </div>
     </div>
-    <div class='panel'>
-      <div ng-controller="TremontController">
-        <img ng-src="{{image}}">
-        <%= yield %>
-      </div>
+  </div>
+  <div class="col-md-12">
+    <div class="panel">
+      <%= yield %>
     </div>
   </div>
-
 </body>
+
+<footer>
+    <div class="col-md-3">
+    <h5>Built By MB, Inc.</h5>
+    </div>
+</footer>
 </html>
