@@ -15,7 +15,7 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require app
-//= require controllers/tremont_controller
-//= require background
+//= require controllers/word_content
+//= require controllers/buildings
 //= require turbolinks
 //= require_tree .

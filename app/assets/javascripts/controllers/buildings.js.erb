@@ -1,0 +1,10 @@
+app.controller("BuildingImageController", ['$scope', function ($scope) {
+  'use strict'
+  var building_1 = "<%= asset_path 'Building1-format.png' %>";
+  var building_2 = "<%= asset_path 'Building2-format.png' %>";
+  var building_3 = "<%= asset_path 'Building3-format.png' %>";
+
+  $scope.building1 = building_1;
+  $scope.building2 = building_2;
+  $scope.building3 = building_3;
+}]);

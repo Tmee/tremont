@@ -1,3 +1,1 @@
-(function(){
-  var app = angular.module('tremont', []);
-});
+var app = angular.module('tremont', []);
