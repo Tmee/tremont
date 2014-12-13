@@ -19,3 +19,5 @@
 //= require controllers/buildings
 //= require turbolinks
 //= require_tree .
+
+
