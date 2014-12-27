@@ -3,8 +3,12 @@ app.controller("BuildingImageController", ['$scope', function ($scope) {
   var building_1 = "<%= asset_path 'Building1-format.png' %>";
   var building_2 = "<%= asset_path 'Building2-format.png' %>";
   var building_3 = "<%= asset_path 'Building3-format.png' %>";
+  var building_4 = "<%= asset_path 'buildings1.png' %>";
+  var image1     = "<%= asset_path 'REFA.png'%>"
 
   $scope.building1 = building_1;
   $scope.building2 = building_2;
   $scope.building3 = building_3;
+  $scope.building4 = building_4;
+  $scope.image1    = image1
 }]);

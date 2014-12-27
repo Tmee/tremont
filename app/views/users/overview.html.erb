@@ -2,7 +2,9 @@
   <div class="col-md-1"></div>
   <div class="col-md-6 text-left" ng-controller="WordContentController">
       <h2 class="text-primary">Coporate Strategy</h2>
-      <p>{{overview1}}</p>
+      <div ng-controller="WordContentController">
+        <p>{{overview1}}</p>
+      </div>
   </div>
 </div><br/>
 
@@ -10,13 +12,18 @@
 <div class="row text-left">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-    <div ng-controller="WordContentController">
     <h4 class="text-primary">Client Service – </h4>
-      <p>{{overview2}}</p>
+      <div ng-controller="WordContentController">
+        <p>{{overview2}}</p>
+      </div>
     <h4 class="text-primary">Portfolio Management – </h4>
-      <p>{{overview3}}</p>
+      <div ng-controller="WordContentController">
+        <p>{{overview3}}</p>
+      </div>
     <h4 class="text-primary">Advisory Services – </h4>
-      <p>{{overview4}}</p>
-    </div>
+      <div ng-controller="WordContentController">
+        <p>{{overview4}}</p>
+      </div>
   </div>
 </div>
+
